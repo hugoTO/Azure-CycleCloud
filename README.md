@@ -96,7 +96,7 @@ Azure CycleCloud is an installable web application that you can run on premise o
 6. Finish configuration and view the home page of CycleCloud 
     ![CycleVM Configuration](/images/cyclecloud_home.png)
 
-## Create your own HPC Cluser
+## Create your own HPC Cluster
 Depends on the requirements of the job nature, user can create a cluster based on default template or custom template. 
 ### Default template
 If the program and enivronment is compiled as a file for job running, default template is recommended. When the user creates the default template, there will be an empty cluster with the job scheduler only on both master node and worker node. 
