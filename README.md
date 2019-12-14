@@ -30,4 +30,17 @@ Azure CycleCloud is an installable web application that you can run on premise o
 ## Deploying Azure CycleCloud
 ### From the Azure Portal
 1. Search Azure CycleCloud in the search bar and find it under Marketplace.
-![Azure Portal - Marketplace](/images/cyclecloud_marketplace.png)
+    ![Azure Portal - Marketplace](/images/cyclecloud_marketplace.png)
+    Select Azure CycleCloud 7.9.x version and click "Create" Button.
+    ![Azure CycleCloud](/images/cyclecloud_description.png)
+2. Fill the required fields 
+    - `Subscription`: Select your own subscription
+    - `Resource group`: *CycleCloud-rg" 
+    - `Virtual machine name`: *cyclevm"
+    - `Region`: *East Asia*
+    - `Size`: *Standard E4s v3*
+    - `Authentication type`: *SSH public key*
+    - `Username`: Anyname you like
+    - `SSH public key`: Use the public key which is created in pre-requisties step
+3. Select *Standard HDD* in Disk page
+4. Click **Review + create** button and start the deployment
