@@ -27,6 +27,20 @@ Azure CycleCloud is an installable web application that you can run on premise o
     - Specify a SSH public key, and that will be used in all CycleCloud Clusters as well as the application server.
     - See [section below](#trouble-with-ssh) for instructions on creating an SSH key if you do not have one.
 
+3. Create Azure Storage Account and Resource Group
+- Search **Azure CycleCloud** in the search bar and find it under Marketplace.
+    ![Azure Portal - Storage](/images/cyclecloud_storageac.png)
+- Fill the required fields
+    - `Subscription`: Select your own subscription
+    - `Resource group`: *CycleCloud-rg*
+    - `Storage account name`: *cyclesharedstorage* (any unique name)
+    - `Location`: *East Asia*
+    - `Performance`: *Standard*
+    - `Account kind`: *StorageV2*
+    - `Peplication`: *Locally-redundant storage (LRS)*
+    - `Access tier`: *Hot*
+- **Review + create** and start the deployment
+
 ## Deploying Azure CycleCloud Web Server
 ### From the Azure Portal
 1. Search **Azure CycleCloud** in the search bar and find it under Marketplace.
@@ -54,4 +68,19 @@ Azure CycleCloud is an installable web application that you can run on premise o
     ![CycleVM Essentials](/images/cyclecloud_vm.png)
 3. Ignore the warning page and proceed to *ip address* 
     *The default security certificate is a self-signed certificate. Therefore, there will be a warning page.*
-    ![Cycle Web Warning](/images/cyclecloud_warningpage.png)
+    ![Cycle Web Warning](/images/cyclecloud_warning.png)
+4. Finish Initial Setup for CycleCloud
+    *Copy down the credential for future use*
+    ![CycleVM Initial Setup](/images/cyclecloud_initialsetup.png)
+5. Click **Click here** and configure Cloud Provider Account
+    Fill the required fields
+    - `Account Name`: *Cycle Account*
+    - `Cloud Environment`: *Azure Public Cloud*
+    - `Tenant ID`: Copy from Service Principal (created in pre-requisties step)
+    - `Application ID`: Copy from Service Principal (created in pre-requisties step)
+    - `Application Secret`: Copy from Service Principal (created in pre-requisties step)
+    - `Subscription ID`: Your own subscription ID
+    - `Default Location`: *East Asia*
+    - `Resource Group`: *CycleCloud-rg*
+    - `Storage Account`: *cyclesharedstorage* (or any name created in pre-requisties step)
+    - `Storage Container`: *cyclecontainter*
