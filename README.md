@@ -88,7 +88,7 @@ Azure CycleCloud is an installable web application that you can run on premise o
     ![CycleVM Configuration](/images/cyclecloud_home.png)
 
 ## Trouble with SSH
-#Generate SSH key with PowerShell 
+# Generate SSH key with PowerShell 
 Both Bash and Powershell variants of the Azure Cloud Shell have the SSH client tools installed.
 1. To generate an ssh-key:
 ![ssh-keygen](images/powershell-ssh-keygen.png)
@@ -101,7 +101,7 @@ Both Bash and Powershell variants of the Azure Cloud Shell have the SSH client t
 
        PS Azure:\> ssh username@cyclecloud.fqdn 
 
-#Generate SSH key with PuTTY Key Generator
+# Generate SSH key with PuTTY Key Generator
 1. Download PuTTY at https://www.putty.org/
 2. Launch PuTTYgen from local computer 
 3. Generate RSA public/private key pair
