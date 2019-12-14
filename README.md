@@ -100,11 +100,11 @@ Azure CycleCloud is an installable web application that you can run on premise o
 Depends on the requirements of the job nature, user can create a cluster based on default template or custom template. 
 ### Default template
 If the program and enivronment is compiled as a file for job running, default template is recommended. When the user creates the default template, there will be an empty cluster with the job scheduler only on both master node and worker node. 
-Go to [Default Cluster Template Tutorial](https://github.com/antong-git/AzureCycleCloud/default_cluster_template_tutorial)
+Go to [Default Cluster Template Tutorial](https://github.com/antong-git/AzureCycleCloud/tree/master/default_cluster_template_tutorial)
 
 ### Custom template
 If there is a need to install specific software and libraries for job running, custom template is recommended. Custom template is required to be built in advance and it is a virtual machine image on Azure. When the user creates the custom template, there will be a customized cluster with the job scheduler and installed software on both master node and worker node. 
-Go to [Custom Cluster Template Tutorial](https://github.com/antong-git/AzureCycleCloud/custom_cluster_template_tutorial)
+Go to [Custom Cluster Template Tutorial](https://github.com/antong-git/AzureCycleCloud/tree/master/custom_cluster_template_tutorial)
 
 ## Configure Settings in CycleCloud portal
 ### Add users to the CycleCloud portal
