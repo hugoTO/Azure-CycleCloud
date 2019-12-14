@@ -3,5 +3,5 @@ Azure CycleCloud is an installable web application that you can run on premise o
 
 ## Pre-requisties
 1. Service Principal 
-..* Azure CycleCloud requires a service principal with contributor access to your Azure subscription.
-..* The simplest way to create one is using the Azure CLI in Cloud Shell, which is already configured with your Azure subscription:
+⋅⋅* Azure CycleCloud requires a service principal with contributor access to your Azure subscription.
+⋅⋅* The simplest way to create one is using the Azure CLI in Cloud Shell, which is already configured with your Azure subscription:
