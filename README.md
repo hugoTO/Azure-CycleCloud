@@ -48,5 +48,10 @@ Azure CycleCloud is an installable web application that you can run on premise o
 5. Once the deployment is done, click **Go to resource** to view the virtual machine. Alternatively, the virtual machine can be found in created resource group.
 
 ## Configure CycleCloud Web Server
-1. Go to the *cyclevm* page and view the essentials
+1. Go to the **cyclevm** page and view the essentials
+2. Clone the **Public IP address** and paste in any browser to visit CycleCloud login page
+    *Web Server will take additional 5 minutes to launch the cyclecloud software after the virtual machine is running*
     ![CycleVM Essentials](/images/cyclecloud_vm.png)
+3. Ignore the warning page and proceed to *ip address* 
+    *The default security certificate is a self-signed certificate. Therefore, there will be a warning page.*
+    ![Cycle Web Warning](/images/cyclecloud_warningpage.png)
