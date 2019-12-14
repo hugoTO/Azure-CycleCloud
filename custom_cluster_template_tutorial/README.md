@@ -6,3 +6,6 @@
 ## Create a Cluster based on Custom Image
 
 ## Transfer data to cluster master node
+### AzCopy
+
+### Rsync 
