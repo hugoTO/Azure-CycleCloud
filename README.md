@@ -29,4 +29,5 @@ Azure CycleCloud is an installable web application that you can run on premise o
 
 ## Deploying Azure CycleCloud
 ### From the Azure Portal
+1. Search Azure CycleCloud in the search bar and find it under Marketplace.
 ![Azure Portal - Marketplace](/images/cyclecloud_marketplace.png)
