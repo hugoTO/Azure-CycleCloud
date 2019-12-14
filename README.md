@@ -2,7 +2,9 @@
 Azure CycleCloud is an installable web application that you can run on premise or in your Azure subscription. Once installed, CycleCloud can be configured to use compute and data resources in your prepared Azure subscription. CycleCloud provides a number of official cluster templates including schedulers (Grid Engine, Slurm, HTCondor), filesystems (Redis, Avere), containers (Docker, Singularity) and many scientific applications. 
 
 ## Pre-requisties
-1. Service Principal
+1. Azure Subscription **Owner** Role
+    *Owner right is required to create Service Principal*
+2. Service Principal
     - Azure CycleCloud requires a service principal with contributor access to your Azure subscription. 
 
     - The simplest way to create one is using the [Azure CLI in Cloud Shell](https://shell.azure.com), which is already configured with your Azure subscription:
@@ -21,13 +23,13 @@ Azure CycleCloud is an installable web application that you can run on premise o
     - Alternatively, follow these [instructions to create a Service Principal](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal) 
         -  In this case, the authentication key is the `password`
 
-2. An SSH key
+3. An SSH key
 
     - An SSH key is needed to log into the CycleCloud VM and clusters
     - Specify a SSH public key, and that will be used in all CycleCloud Clusters as well as the application server.
     - See [section below](#trouble-with-ssh) for instructions on creating an SSH key if you do not have one.
 
-3. Create Azure Storage Account and Resource Group
+4. Azure Storage Account
 - Search **Azure CycleCloud** in the search bar and find it under Marketplace.
     ![Azure Portal - Storage](/images/cyclecloud_storageac.png)
 - Fill the required fields
@@ -88,7 +90,7 @@ Azure CycleCloud is an installable web application that you can run on premise o
     ![CycleVM Configuration](/images/cyclecloud_home.png)
 
 ## Trouble with SSH
-# Generate SSH key with PowerShell 
+### Generate SSH key with PowerShell 
 Both Bash and Powershell variants of the Azure Cloud Shell have the SSH client tools installed.
 1. To generate an ssh-key:
 ![ssh-keygen](images/powershell-ssh-keygen.png)
@@ -101,7 +103,7 @@ Both Bash and Powershell variants of the Azure Cloud Shell have the SSH client t
 
        PS Azure:\> ssh username@cyclecloud.fqdn 
 
-# Generate SSH key with PuTTY Key Generator
+###x` Generate SSH key with PuTTY Key Generator
 1. Download PuTTY at https://www.putty.org/
 2. Launch PuTTYgen from local computer 
 3. Generate RSA public/private key pair
