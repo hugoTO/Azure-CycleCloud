@@ -32,7 +32,7 @@ Azure CycleCloud is an installable web application that you can run on premise o
     ![Azure Portal - Storage](/images/cyclecloud_storageac.png)
 - Fill the required fields
     - `Subscription`: Select your own subscription
-    - `Resource group`: *CycleCloud-rg*
+    - `Resource group`: *CycleCloud-rg* (Create a new resource group)
     - `Storage account name`: *cyclesharedstorage* (any unique name)
     - `Location`: *East Asia*
     - `Performance`: *Standard*
@@ -50,7 +50,7 @@ Azure CycleCloud is an installable web application that you can run on premise o
     ![Azure CycleCloud](/images/cyclecloud_description.png)
 2. Fill the required fields 
     - `Subscription`: Select your own subscription
-    - `Resource group`: *CycleCloud-rg*
+    - `Resource group`: *CycleCloud-rg* (Same group with Storage account)
     - `Virtual machine name`: *cyclevm*
     - `Region`: *East Asia*
     - `Size`: *Standard E4s v3*
@@ -82,5 +82,5 @@ Azure CycleCloud is an installable web application that you can run on premise o
     - `Subscription ID`: Your own subscription ID
     - `Default Location`: *East Asia*
     - `Resource Group`: *CycleCloud-rg*
-    - `Storage Account`: *cyclesharedstorage* (or any name created in pre-requisties step)
-    - `Storage Container`: *cyclecontainter*
+    - `Storage Account`: *cyclesharedstorage* (created in pre-requisties step)
+    - `Storage Container`: *cyclecloud*
