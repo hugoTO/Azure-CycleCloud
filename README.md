@@ -84,3 +84,25 @@ Azure CycleCloud is an installable web application that you can run on premise o
     - `Resource Group`: *CycleCloud-rg*
     - `Storage Account`: *cyclesharedstorage* (created in pre-requisties step)
     - `Storage Container`: *cyclecloud*
+6. Finish configuration and view the home page of CycleCloud 
+    ![CycleVM Configuration](/images/cyclecloud_home.png)
+
+## Trouble with SSH
+#Generate SSH key with PowerShell 
+Both Bash and Powershell variants of the Azure Cloud Shell have the SSH client tools installed.
+1. To generate an ssh-key:
+![ssh-keygen](images/powershell-ssh-keygen.png)
+
+2. To obtain the public key of the generated key, run the following command and copy the output:
+
+        PS Azure:\> cat ~/.ssh/id_rsa.pub
+
+3. You may also SSH into the VM from Cloud Shell:
+
+       PS Azure:\> ssh username@cyclecloud.fqdn 
+
+#Generate SSH key with PuTTY Key Generator
+1. Download PuTTY at https://www.putty.org/
+2. Launch PuTTYgen from local computer 
+3. Generate RSA public/private key pair
+4. Save the public/private key pair 
