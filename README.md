@@ -1,4 +1,4 @@
-# Azure Cycle Cloud
+# Azure CycleCloud Technical Guide
 Azure CycleCloud is an installable web application that you can run on premise or in your Azure subscription. Once installed, CycleCloud can be configured to use compute and data resources in your prepared Azure subscription. CycleCloud provides a number of official cluster templates including schedulers (Grid Engine, Slurm, HTCondor), filesystems (Redis, Avere), containers (Docker, Singularity) and many scientific applications. 
 
 ## Table of content
