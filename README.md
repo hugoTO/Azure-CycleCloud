@@ -106,6 +106,11 @@ Go to [default cluster template tutorial](https://docs.microsoft.com/en-us/azure
 If there is a need to install specific software and libraries for job running, custom template is recommended. Custom template is required to be built in advance and it is a virtual machine image on Azure. When the user creates the custom template, there will be a customized cluster with the job scheduler and installed software on both master node and worker node. 
 Go to [custom cluster template tutorial](https://github.com/antong-git/AzureCycleCloud/tree/master/custom_cluster_template_tutorial)
 
+### Autoscale and scalesets
+In order to try and ensure that the correct VMs are provisioned for different types of jobs, CycleCloud treats autoscale of MPI and serial jobs differently in PBS Professional clusters. 
+
+For serial jobs, multiple VM scalesets (VMSS) are used in order to scale as quickly as possible. For MPI jobs to use the InfiniBand fabric for those instances that support it, all of the nodes allocated to the job have to be deployed in the same VMSS. Currently, a single VMSS is used for all MPI jobs. This can occasionally lead to slower provisioning and deprovisioning of nodes since VMSS operations are atomic. If the scaleset is waiting on some nodes to deprovision, CycleCloud must wait for that operation to complete to provision more nodes.
+
 ## Configure Settings in CycleCloud portal
 ### Add users to the CycleCloud portal
 1. Click **Setting** button on the left menu bar and navigate to **Users** sub-page
