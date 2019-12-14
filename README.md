@@ -27,12 +27,12 @@ Azure CycleCloud is an installable web application that you can run on premise o
     - Specify a SSH public key, and that will be used in all CycleCloud Clusters as well as the application server.
     - See [section below](#trouble-with-ssh) for instructions on creating an SSH key if you do not have one.
 
-## Deploying Azure CycleCloud
+## Deploying Azure CycleCloud Web Server
 ### From the Azure Portal
-1. Search Azure CycleCloud in the search bar and find it under Marketplace.
+1. Search **Azure CycleCloud** in the search bar and find it under Marketplace.
     ![Azure Portal - Marketplace](/images/cyclecloud_marketplace.png)
-    
-    Select Azure CycleCloud 7.9.x version and click "Create" Button.
+
+    Select **Azure CycleCloud 7.9.x** version and click **Create** Button.
     ![Azure CycleCloud](/images/cyclecloud_description.png)
 2. Fill the required fields 
     - `Subscription`: Select your own subscription
@@ -45,3 +45,8 @@ Azure CycleCloud is an installable web application that you can run on premise o
     - `SSH public key`: Use the public key which is created in pre-requisties step
 3. Select **Standard HDD** in Disk page
 4. Click **Review + create** button and start the deployment
+5. Once the deployment is done, click **Go to resource** to view the virtual machine. Alternatively, the virtual machine can be found in created resource group.
+
+## Configure CycleCloud Web Server
+1. Go to the *cyclevm* page and view the essentials
+    ![CycleVM Essentials](/images/cyclecloud_vm.png)
