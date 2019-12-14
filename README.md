@@ -29,18 +29,18 @@ Azure CycleCloud is an installable web application that you can run on premise o
     - See [section below](#trouble-with-ssh) for instructions on creating an SSH key if you do not have one.
 
 4. Azure Storage Account
-- Search **Azure CycleCloud** in the search bar and find it under Marketplace.
+    - Search **Azure CycleCloud** in the search bar and find it under Marketplace.
     ![Azure Portal - Storage](/images/cyclecloud_storageac.png)
-- Fill the required fields
-    - `Subscription`: Select your own subscription
-    - `Resource group`: *CycleCloud-rg* (Create a new resource group)
-    - `Storage account name`: *cyclesharedstorage* (any unique name)
-    - `Location`: *East Asia*
-    - `Performance`: *Standard*
-    - `Account kind`: *StorageV2*
-    - `Peplication`: *Locally-redundant storage (LRS)*
-    - `Access tier`: *Hot*
-- **Review + create** and start the deployment
+    - Fill the required fields
+        - `Subscription`: Select your own subscription
+        - `Resource group`: *CycleCloud-rg* (Create a new resource group)
+        - `Storage account name`: *cyclesharedstorage* (any unique name)
+        - `Location`: *East Asia*
+        - `Performance`: *Standard*
+        - `Account kind`: *StorageV2*
+        - `Peplication`: *Locally-redundant storage (LRS)*
+        - `Access tier`: *Hot*
+    - **Review + create** and start the deployment
 
 ## Deploying Azure CycleCloud Web Server
 ### From the Azure Portal
