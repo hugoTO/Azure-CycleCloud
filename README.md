@@ -5,7 +5,7 @@ Azure CycleCloud is an installable web application that you can run on premise o
 1. [Pre-requities](#pre-requisties)
 2. [Deploying Azure CycleCloud Web Server](#deploying-azure-cycleCloud-web-server)
 3. [Configure CycleCloud Web Server](#configure-cycleCloud-web-server)
-4. [Create your own HPC Cluster](#create-your-ownhpc-cluster)
+4. [Create your own HPC Cluster](#create-your-own-hpc-cluster)
 5. [Configure Settings in CycleCloud portal](#configure-settings-in-cyclecloud-portal)
 6. [Touble with SSH](#trouble-with-ssh)
 
