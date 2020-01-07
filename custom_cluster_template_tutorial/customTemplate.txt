@@ -6,7 +6,6 @@
 [cluster gridengine_customimage]
 FormLayout = selectionpanel
 Category = Applications
-
 Autoscale = $Autoscale
 
     [[node defaults]]
