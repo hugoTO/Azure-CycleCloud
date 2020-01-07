@@ -6,7 +6,7 @@
 [cluster Test_GridEngine]
 FormLayout = selectionpanel
 Category = Applications
-IconUrl = https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjxosX3xfDmAhXDbCsKHdyuCZgQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.liberaldictionary.com%2Ficon%2F&psig=AOvVaw1pF-SOBxIHTTHEW9CJhnkb&ust=1578454101950625
+IconUrl =  https://upload.wikimedia.org/wikipedia/zh/thumb/8/88/Chinese_University_of_Hong_Kong.svg/355px Chinese_University_of_Hong_Kong.svg.png
 
 Autoscale = $Autoscale
 
