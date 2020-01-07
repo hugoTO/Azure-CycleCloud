@@ -1,5 +1,5 @@
 [cluster CUHK-GridEngine]
-    IconUrl = https://upload.wikimedia.org/wikipedia/zh/thumb/8/88/Chinese_University_of_Hong_Kong.svg/355px-                       Chinese_University_of_Hong_Kong.svg.png
+    IconUrl = https://upload.wikimedia.org/wikipedia/zh/thumb/8/88/Chinese_University_of_Hong_Kong.svg/355px-Chinese_University_of_Hong_Kong.svg.png
     
     [[node master]]
         [[[volume nfs-1]]]
