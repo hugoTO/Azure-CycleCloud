@@ -3,7 +3,7 @@
 ## Cluster Configuration File ##
 ################################
 
-[cluster Test_GridEngine]
+[cluster gridengine_customimage]
 FormLayout = selectionpanel
 Category = Applications
 
