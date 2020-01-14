@@ -36,13 +36,13 @@ Autoscale = $Autoscale
         StaticPublicIpAddress = true
 
         [[[volume nfs-1]]]
-        Size = 2048
+        Size = 128
         SSD = True
         Mount = nfs
         Persistent = true
 
         [[[volume nfs-2]]]
-        Size = 2048
+        Size = 128
         SSD = True
         Mount = nfs
         Persistent = true
