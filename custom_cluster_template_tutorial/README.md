@@ -55,7 +55,7 @@ Import the template
 ## Create a Custom Cluster based on Custom Image
 1. Click "+" to add a cluster and select the Template that you have imported
 
-![](./img/vreateTemplate.png)
+![](./img/createTemplate.png)
 
 2. In the **Required Settings tab**, select the **desired VM type** for Master node and execute node, and select the subnetID from your **CycleCloud Resource Group**.
 
