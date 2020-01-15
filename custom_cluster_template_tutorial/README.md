@@ -26,7 +26,9 @@ At VM:
 At Azure CLI, replace the value inside []: 
 
 **az vm deallocate -n [Source VM] -g [Resource Group]**
+
 **az vm generalize -n [Source VM]-g [Resource Group]**
+
 **az image create -n [Image Name] -g [Resource Group]--source [Source VM]**
 
 Copy the value **id** of the response object
@@ -37,18 +39,25 @@ Copy the value **id** of the response object
 1. Download the Template Script **customTemplate.txt** from this repository
 
 2. You may customize the Template icon and NFS size setting thorough editing the values in **customTemplate.txt**
+
 * Name: [cluster "Your Template Name"]
+
 * icon: IconUrl = "Your icon url"
+
 * Number of NFS: Add **[[[volume nfs-]]]** node
+
 * Size of NFS: Inside the **[[[volume nfs-]]]** node, change the **Size**
 
 3. Connect to CycleCloud VM
 
 4. Enter the command line in the CycleCloud VM:
+
 Login the CycleCloud with your CycleCloud web interface account
 *  $ cyclecloud initialize --batch --url=https://localhost --verify-ssl=false --username=[User ID] --password=[Password]
 Get the Custom Template script from GitHub
+
 *  $ wget https://raw.githubusercontent.com/hugoTO/Azure-CycleCloud/master/custom_cluster_template_tutorial/customTemplate.txt
+
 Import the template
 * $ cyclecloud import_template -f customTemplate.txt --force
 
