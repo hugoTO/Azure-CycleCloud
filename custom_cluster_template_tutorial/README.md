@@ -1,5 +1,7 @@
 # Custom Cluster Template Tutorial
 ## Create Custom Image from Azure Virtual Machine 
+1. Go to Azure Portal, search the desired Cluster OS
+
 
 ## Upload Custom Image to CycleCloud Web Server
 
