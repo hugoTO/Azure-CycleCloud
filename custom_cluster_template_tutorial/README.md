@@ -25,11 +25,11 @@ At VM:
 
 At Azure CLI, replace the value inside []: 
 
-**az vm deallocate -n [Source VM] -g [Resource Group]**
+    **az vm deallocate -n [Source VM] -g [Resource Group]**
 
-**az vm generalize -n [Source VM]-g [Resource Group]**
+    **az vm generalize -n [Source VM]-g [Resource Group]**
 
-**az image create -n [Image Name] -g [Resource Group]--source [Source VM]**
+    **az image create -n [Image Name] -g [Resource Group]--source [Source VM]**
 
 Copy the value **id** of the response object
 ![](./img/ImageResponse.png)
@@ -40,26 +40,26 @@ Copy the value **id** of the response object
 
 2. You may customize the Template icon and NFS size setting thorough editing the values in **customTemplate.txt**
 
-* Name: [cluster "Your Template Name"]
+    * Name: [cluster "Your Template Name"]
 
-* icon: IconUrl = "Your icon url"
+    * icon: IconUrl = "Your icon url"
 
-* Number of NFS: Add **[[[volume nfs-]]]** node
+    * Number of NFS: Add **[[[volume nfs-]]]** node
 
-* Size of NFS: Inside the **[[[volume nfs-]]]** node, change the **Size**
+    * Size of NFS: Inside the **[[[volume nfs-]]]** node, change the **Size**
 
 3. Connect to CycleCloud VM
 
 4. Enter the command line in the CycleCloud VM:
 
 Login the CycleCloud with your CycleCloud web interface account
-*  $ cyclecloud initialize --batch --url=https://localhost --verify-ssl=false --username=[User ID] --password=[Password]
-Get the Custom Template script from GitHub
+    *  $ cyclecloud initialize --batch --url=https://localhost --verify-ssl=false --username=[User ID] --password=[Password]
 
-*  $ wget https://raw.githubusercontent.com/hugoTO/Azure-CycleCloud/master/custom_cluster_template_tutorial/customTemplate.txt
+Get the Custom Template script from GitHub
+    *  $ wget https://raw.githubusercontent.com/hugoTO/Azure-CycleCloud/master/custom_cluster_template_tutorial/customTemplate.txt
 
 Import the template
-* $ cyclecloud import_template -f customTemplate.txt --force
+    * $ cyclecloud import_template -f customTemplate.txt --force
 
 ## Create a Custom Cluster based on Custom Image
 1. Click "+" to add a cluster and select the Template that you have imported
