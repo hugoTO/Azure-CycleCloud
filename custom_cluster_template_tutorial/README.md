@@ -26,11 +26,11 @@ At VM:
 
 At Azure CLI, replace the value inside []: 
 
-    **az vm deallocate -n [Source VM] -g [Resource Group]**
+    az vm deallocate -n [Source VM] -g [Resource Group]
 
-    **az vm generalize -n [Source VM]-g [Resource Group]**
+    az vm generalize -n [Source VM]-g [Resource Group]
 
-    **az image create -n [Image Name] -g [Resource Group]--source [Source VM]**
+    az image create -n [Image Name] -g [Resource Group]--source [Source VM]
 
 Copy the value **id** of the response object
 ![](./img/ImageResponse.png)
@@ -45,9 +45,9 @@ Copy the value **id** of the response object
 
          icon: IconUrl = "Your icon url"
 
-         Number of NFS: Add **[[[volume nfs-]]]** node
+         Number of NFS: Add [[[volume nfs-]]] node
 
-         Size of NFS: Inside the **[[[volume nfs-]]]** node, change the **Size**
+         Size of NFS: Inside the [[[volume nfs-]]] node, change the Size
 
 3. Connect to CycleCloud VM
 
