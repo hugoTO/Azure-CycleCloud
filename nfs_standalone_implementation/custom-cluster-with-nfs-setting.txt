@@ -50,23 +50,6 @@ Autoscale = $Autoscale
         AssociatePublicIpAddress = $UsePublicNetwork
         StaticPublicIpAddress = true
 
-        [[[volume nfs-1]]]
-        Size = 256
-        SSD = True
-        Mount = nfs
-        Persistent = true
-
-        [[[volume nfs-2]]]
-        Size = 256
-        SSD = True
-        Mount = nfs
-        Persistent = true
-
-        [[[configuration cyclecloud.mounts.nfs]]]
-        mountpoint = /mnt/exports
-        fs_type = ext4
-        raid_level = 0
-
 
     [[node executedefaults]]
     Abstract = true
