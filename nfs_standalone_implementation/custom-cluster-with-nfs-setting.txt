@@ -23,6 +23,10 @@ Autoscale = $Autoscale
 	cyclecloud.mounts.shared.disabled = true
         cyclecloud.exports.shared.disabled = true
         cyclecloud.exports.defaults.samba.enabled = false
+        cshared.server.legacy_links_disabled = true 
+        cyclecloud.selinux.policy = permissive 
+        cyclecloud.converge_on_boot = true 
+        cyclecloud.timezone = Asia/Hong_Kong 
 
         [[[configuration cyclecloud.mounts.nfs_shared]]]
         type = nfs
