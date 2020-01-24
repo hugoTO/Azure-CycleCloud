@@ -20,6 +20,9 @@ Autoscale = $Autoscale
         [[[configuration]]]
         cyclecloud.cluster.autoscale.idle_time_after_jobs = $IdleTimeAfterJobs
         cyclecloud.cluster.autoscale.idle_time_before_jobs = $IdleTimeBeforeJobs
+	cyclecloud.mounts.shared.disabled = true
+        cyclecloud.exports.shared.disabled = true
+        cyclecloud.exports.defaults.samba.enabled = false
 
         [[[configuration cyclecloud.mounts.nfs_shared]]]
         type = nfs
