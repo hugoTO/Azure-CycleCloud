@@ -2,7 +2,7 @@
 ## Cluster Configuration File ##
 ################################
 
-[cluster Test]
+[cluster Test-NFS-Standalone]
 FormLayout = selectionpanel
 Category = Applications
 IconUrl = https://www.liberaldictionary.com/wp-content/uploads/2019/02/icon-0326.jpg
@@ -30,14 +30,14 @@ Autoscale = $Autoscale
 
         [[[configuration cyclecloud.mounts.nfs_shared]]]
         type = nfs
-        mountpoint = /shared
+        mountpoint = /mnt/exports/shared
         export_path = $shared_export_path
 	options = $nfs_options
         address = $nfs_address
 
         [[[configuration cyclecloud.mounts.nfs_software]]]
         type = nfs
-        mountpoint = /software
+        mountpoint = /mnt/exports/software
         export_path = $software_export_path
 	options = $nfs_options
         address = $nfs_address
