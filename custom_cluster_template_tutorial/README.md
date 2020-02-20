@@ -78,7 +78,3 @@ Import the template
 
 ![](./img/clusterAdvancedTab.png)
 
-## Transfer data to cluster master node
-### AzCopy
-
-### Rsync 
