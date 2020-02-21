@@ -70,7 +70,7 @@ Import the template
 
 3. Fill in the information and click save
 
-4. Start the cluster and wait util it's set up
+4. Start the cluster and wait until it's set up
 
 5. Select to the NFS Sever node, and click ***Show Detail***
 
